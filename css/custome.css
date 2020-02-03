@@ -1,37 +1,16 @@
 
-html {
- font-size: 1rem;
-}
-
-h1 {
-    font-size: 2rem;
-    color: blue !important;
-    background-color: blue !important;
-}
 
 .display-1 {
-    font-size: 2rem;
-    color: blue !important;
-    background-color: blue !important;
+    font-size: 7rem;
+    color: blue;
 }
 
-@include media-breakpoint-up(sm) {
- html {
-   font-size: 1.2rem;
- }
+
+.display-1 {
+    font-size: 7rem;
+    color: blue;
 }
 
-@include media-breakpoint-up(md) {
- html {
-   font-size: 1.4rem;
- }
-}
-
-@include media-breakpoint-up(lg) {
- html {
-   font-size: 1.6rem;
- }
-}
 
 .navbar-toggler{
      border: none;

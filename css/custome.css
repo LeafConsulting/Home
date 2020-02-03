@@ -1,16 +1,23 @@
 
 
+/* START Sjekker bredde på skjermen å stiller skrift deretter*/
 .display-1 {
     font-size: 7rem;
     color: blue;
 }
 
-
-.display-1 {
-    font-size: 7rem;
-    color: blue;
+@media only screen and (max-width: 1500px) {
+    .display-1 {
+        font-size: 4rem;
+    }
 }
 
+@media only screen and (max-width: 1000px) {
+    .display-1 {
+        font-size: 2rem;
+    }
+}
+/* END Sjekker bredde på skjermen å stiller skrift deretter*/
 
 .navbar-toggler{
      border: none;

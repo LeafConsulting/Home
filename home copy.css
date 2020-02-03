@@ -1,19 +1,22 @@
-/* change the background color */
-.navbar-custom {
-    background-color: #ff5500;
+
+html {
+ font-size: 1rem;
 }
-/* change the brand and text color */
-.navbar-custom .navbar-brand,
-.navbar-custom .navbar-text {
-    color: #2d9055;
+
+@include media-breakpoint-up(sm) {
+ html {
+   font-size: 1.2rem;
+ }
 }
-/* change the link color */
-.navbar-custom .navbar-nav .nav-link {
-    color: rgba(255,255,255,.5);
+
+@include media-breakpoint-up(md) {
+ html {
+   font-size: 1.4rem;
+ }
 }
-/* change the color of active or hovered links */
-.navbar-custom .nav-item.active .nav-link,
-.navbar-custom .nav-item:focus .nav-link,
-.navbar-custom .nav-item:hover .nav-link {
-    color: #ffffff;
+
+@include media-breakpoint-up(lg) {
+ html {
+   font-size: 1.6rem;
+ }
 }

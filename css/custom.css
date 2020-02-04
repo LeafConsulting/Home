@@ -34,3 +34,19 @@
    margin-right: 5px;
    margin-top: -2px;
  } */
+
+ .founderImg {
+     height:15vw;
+     width:15vw;
+     border-radius: 50%;
+ }
+
+ #founderContainer {
+     margin-top:-7.5vw;
+ }
+
+ .founderTitle {
+     color:white;
+     font-size:20px;
+
+ }

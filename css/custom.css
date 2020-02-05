@@ -6,14 +6,36 @@
     color: blue;
 }
 
+.display-2 {
+    font-size: 4rem;
+    color: blue;
+}
+
+.display-3 {
+    font-size: 1.5rem;
+    color: blue;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 @media only screen and (max-width: 1350px) {
     .display-1 {
         font-size: 4rem;
+    }
+
+    .display-2 {
+        font-size: 3rem;
     }
 }
 
 @media only screen and (max-width: 1000px) {
     .display-1 {
+        font-size: 2rem;
+    }
+
+    .display-2 {
         font-size: 2rem;
     }
 }
@@ -41,25 +63,44 @@
      border-radius: 50%;
  }
 
+ .navbar-collapse.collapse.in{
+   background-color:lightgreen;
+ }
+
  #founderContainer {
      margin-top:-10vw;
+
+ }
+
+ #tjenesterContainer {
+     margin-top:10vw;
+
+
  }
 
  .founderTitle {
      color:white;
-     font-size:1.5rem;
 
+ }
+
+ #Tjenester {
+     padding-bottom:3vw;
  }
 
  #founderHeader {
     margin-top:17vw;
     color:white;
+
  }
 
- #founderHeaderH1 {
+ #Ansatte {
     color:white;
-    font-size:4rem;
  }
+
+ .navbar-fixed-top.scrolled {
+  background-color: #fff !important;
+  transition: background-color 200ms linear;
+}
 
  /*#logoImg {
      height:20px;

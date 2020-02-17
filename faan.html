@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Leaf Consulting</title>
+
+        <link href="bootstrap-4.4.1-dist/css/bootstrap.css" rel="stylesheet" />
+        <link href="bootstrap-4.4.1-dist/css/bootstrap-theme.css" rel="stylesheet" />
+        <link rel="stylesheet" href="css/custom.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="bootstrap-4.4.1-dist/js/bootstrap.min.js"></script>
+
+        <script>
+            //Smooth scroll
+            $(function () {
+                $(document).scroll(function () {
+                var $nav = $(".navbar-fixed-top");
+                $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+                });
+            });
+
+
+
+            //Bytter navbar-struktur
+
+            var mobileWidth = 800;
+
+            $(window).resize(function() {
+                if (window.innerWidth <= mobileWidth) {
+                    $("#nav").removeClass("navbar-default");
+                    $("#nav").addClass("sticky-top");
+
+                } else {
+                    $("#nav").removeClass("sticky-top");
+                    $("#nav").addClass("navbar-default");
+
+                }
+            });
+
+
+
+            $(document).ready(function(){
+                $(window).resize();
+
+                $(window).scroll(function(){
+                    if($(window).scrollTop() < $("#nav").height() || window.innerWidth > mobileWidth){
+
+                        $("#nav").css({"background-color":"transparent"});
+                    }
+                    else{
+
+                        $("#nav").css({"background-color":"white"});
+                    }
+                })
+            })
+
+            function hasClass(element, cls) {
+                return (' ' + element.className + ' ').indexOf(' ' + cls + ' ') > -1;
+            }
+
+            function navbutton() {
+                if(hasClass(document.getElementById("navbutton"),"collapsed")) {
+
+                    $("#nav").css({"background-color":"transparent"});
+
+
+                }
+                else {
+
+                    $("#nav").css({"background-color":"white"});
+
+                }
+            }
+        </script>
+    </head>
+    <body>
+
+        <div class="container-fluid">
+            <section class="row no-gutter align-items-center">
+                <div class="col-lg-12 text-center p-0 align-items-center">
+                    <div id="container1">
+                        <div id="navbarcontainer">
+                            <nav id="nav" class="navbar navbar-expand-lg navbar-light">
+                                <button class="navbar-toggler" id="navbutton" onclick="navbutton()" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                                    <a  class="navbar-brand" href="#">
+                                        Leaf
+                                    </a>
+                                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#Ansatte">Ansatte</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#Tjenester">Tjenester</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#Prosjekter">Prosjekter</a>
+                                        </li>
+                                    </ul>
+
+                                    <button onclick="window.location.href='mailto:kontakt@leafconsulting.no'" class="btn btn-success navbar-btn">Kontakt oss</button>
+                                </div>
+                            </nav>
+                        </div>
+
+                        <div id="bodycontainer">
+
+                            <!--Første bilde-->
+                            <img class="img-fluid mx-auto" src="Bilder/home-PC.jpg" >
+
+                            <!--Headline-->
+                            <div class="w-100 position-absolute" style="margin-top:-55vw;">
+                                <h1 class="display-1 text-success my-auto">Leaf</h1>
+                                <h1 class="display-1 text-body my-auto">Consulting</h1>
+                            </div>
+
+                            <div id="founderContainer" class="w-100 position-absolute">
+
+                                <h1 id="Ansatte" class="display-2 text-light">Ansatte</h1>
+                                <br><br>
+
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-sm-3">
+                                            <img class=" founderImg" src="https://www.w3schools.com/howto/img_avatar.png" alt="">
+                                            <p class="founderTitle display-3">Andreas Aarrestad</p>
+                                        </div>
+                                        <div class="col-sm-3">
+                                            <img class="founderImg" src="https://www.w3schools.com/howto/img_avatar.png" alt="">
+                                            <p class="founderTitle display-3">Fridtjof Flaate</p>
+                                        </div>
+                                        <div class="col-sm-3">
+                                            <img class="founderImg" src="https://www.w3schools.com/howto/img_avatar.png" alt="">
+                                            <p class="founderTitle display-3">Jannik Fredricsson</p>
+                                        </div>
+                                        <div class="col-sm-3">
+                                            <img class="founderImg" src="https://www.w3schools.com/howto/img_avatar.png" alt="">
+                                            <p class="founderTitle display-3">Santhosh Shanmugam</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--Oppned bilde-->
+                            <img class="img-fluid mx-auto"  src="Bilder/home-PC-oppned.jpg">
+
+                            <div id="tjenesterContainer" class="w-100 position-absolute">
+                                <h1 id="Tjenester" class="display-2 text-success my-auto">Tjenester</h1>
+
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-sm-4">
+                                            <div class="row">
+                                                <div class="col-lg-12 align-items-center">
+                                                    <img class="tjenesteikon" src="Bilder\layers.svg" alt="">
+                                                </div>
+                                            </div>
+                                            <br>
+                                            <h3>Kompetent</h3>
+
+                                            <p>Våre konsulenter er sivilingeniørstudenter ved Gløshaugen i Trondheim, og har god erfaring
+                                            fra arbeidslivet samt en tung faglig bakgrunn. </p>
+
+                                        </div>
+                                        <div class="col-sm-4">
+
+                                            <div class="row">
+                                                <div class="col-lg-12 align-items-center">
+                                                    <img class="tjenesteikon" src="Bilder\settings.svg" alt="">
+                                                </div>
+                                            </div>
+                                            <br>
+                                            <h3>Skreddersydd</h3>
+                                            <p>Vi er svært fleksible, og kan tilby moderne webdesign, effektive programvareløsninger og strategi tilpasset dine behov.  </p>
+                                        </div>
+                                        <div class="col-sm-4">
+
+                                            <div class="row">
+                                                <div class="col-lg-12 align-items-center">
+                                                    <img class="tjenesteikon" src="Bilder\growth.svg" alt="">
+                                                </div>
+                                            </div>
+                                            <br>
+                                            <h3>Rimelig</h3>
+                                            Ettersom våre ansatte er fulltidsstudenter, vil utviklingen av produktet bli noe lengre. Til gjengjeld
+                                            er våre priser langt under markedsverdi.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div style="height:1200px;">
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </div>
+    </body>
+</html>

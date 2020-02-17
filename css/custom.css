@@ -6,6 +6,26 @@
     color: blue;
 }
 
+#container1 {
+    position: relative;
+}
+
+#navbarcontainer, #bodycontainer {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#navbarcontainer {
+    z-index:10;
+    height:3000px;
+}
+
+#nav {
+    transition: background-color 0.5s ease;
+}
+
 .tjenesteikon {
     height:5vw;
     width:5vw;
@@ -73,14 +93,11 @@ html {
  }
 
  #founderContainer {
-     margin-top:-10vw;
-
+     margin-top:-18vw;
  }
 
  #tjenesterContainer {
-     margin-top:15vw;
-
-
+     margin-top:-30vw;
  }
 
  .founderTitle {
@@ -93,7 +110,7 @@ html {
  }
 
  #founderHeader {
-    margin-top: 25vw; /*18 vw*/
+    margin-top: 18vw; /*25 vw*/
     color:white;
 
  }

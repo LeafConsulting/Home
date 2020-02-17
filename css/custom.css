@@ -6,6 +6,11 @@
     color: blue;
 }
 
+.tjenesteikon {
+    height:5vw;
+    width:5vw;
+}
+
 .display-2 {
     font-size: 4rem;
     color: blue;
@@ -73,7 +78,7 @@ html {
  }
 
  #tjenesterContainer {
-     margin-top:10vw;
+     margin-top:15vw;
 
 
  }

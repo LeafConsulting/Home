@@ -19,7 +19,7 @@
 
 #navbarcontainer {
     z-index:10;
-    height:3000px;
+
 }
 
 #nav {
@@ -92,13 +92,45 @@ html {
    background-color:lightgreen;
  }
 
+ #snøbilde {
+     position:absolute;
+     height: 300px;
+     width:98.9vw;
+     left:0;
+
+     background: rgb(219,233,242);
+     background: linear-gradient(0deg, rgba(219,233,242,0) 0%, rgba(219,233,242,0.9) 15%, rgba(219,233,242,1) 40%, rgba(241,245,246,1) 60%, rgba(241,245,246,0.9) 85%, rgba(241,245,246,0) 100%);
+
+ }
+
+ #footergrad {
+     position:absolute;
+     height: 300px;
+     width:98.9vw;
+     left:0;
+
+     background: rgb(36,46,55);
+     background: linear-gradient(180deg, rgba(36,46,55,0) 0%, rgba(36,46,55,0.2) 20%, rgba(36,46,55,0.4) 40%, rgba(36,46,55,0.6) 60%, rgba(36,46,55,0.8) 80%, rgba(36,46,55,1) 100%);
+}
+
+#footer {
+    height:320px;
+    width:100%;
+    background-color:#242e37;
+    left:0;
+}
+
  #founderContainer {
      margin-top:-18vw;
  }
 
  #tjenesterContainer {
-     margin-top:-30vw;
+     margin-top:-16vw;
  }
+
+  #portefoljeContainer {
+      margin-top:-70vw;
+  }
 
  .founderTitle {
      color:white;

@@ -13,7 +13,7 @@ body {
   top: 30%;
 }
 
-.btn {
+.bruh {
   border: none;
   display: block;
   text-align: center;
@@ -38,12 +38,12 @@ body {
   font-size: 15px;
 }
 
-.btn span {
+.bruh span {
   position: relative;
   z-index: 1;
 }
 
-.btn:after {
+.bruh:after {
   content: "";
   position: absolute;
   left: 0;
@@ -57,7 +57,7 @@ body {
   transform: translateX(-98%) translateY(-25%) rotate(45deg);
 }
 
-.btn:hover:after {
+.bruh:hover:after {
   -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
   transform: translateX(-9%) translateY(-25%) rotate(45deg);
 }

@@ -1,0 +1,187 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.andre-del {
+  background-color: rgb(248, 248, 246);
+
+}
+
+.første-del {
+  background-image: url(../css/mobil1.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: rgb(248, 248, 246);
+
+}
+.tittel {
+  padding-bottom: 60vw;
+  padding-top: 30vw;
+  padding-left: 40vw;
+
+}
+.display-1 {
+  font-size: 6rem;
+    color: black;
+}
+
+.wrapper {
+  width: 100%;
+  position: absolute;
+}
+
+.bilde1 {
+  width: 100%;
+
+}
+.tjenesteikon {
+    height:15vw;
+    width:15vw;
+}
+
+.display-2 {
+    font-size: 4rem;
+    color: black;
+}
+
+.display-3 {
+    font-size: 1rem;
+    color: black;
+}
+
+.founderImg {
+    height:15vw;
+    width:15vw;
+    border-radius: 50%;
+}
+#founderContainer {
+  padding-bottom: 30px;
+}
+
+#Tjenester {
+    padding-bottom:3vw;
+    padding-top: 3vw;
+}
+#tjenesterContainer {
+  padding-bottom: 30vw;
+  padding-top: 20vw;
+}
+
+#founderHeader {
+   margin-top: 18vw; /*25 vw*/
+   color:white;
+
+}
+
+#Ansatte {
+   color:black;
+   padding-bottom: 20px;
+   padding-top: 3vw;
+}
+
+#footer {
+    height:200px;
+    width:100%;
+    background-color:#242e37;
+}
+
+
+
+@media only screen and (max-width: 1350px) {
+  .display-1 {
+      font-size: 6rem;
+  }
+
+    .display-2 {
+        font-size: 3rem;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .display-1 {
+        font-size: 2rem;
+    }
+
+    .display-2 {
+        font-size: 2rem;
+    }
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.button_container {
+  position: max-auto;
+  left: 0;
+  right: 0;
+  top: 30%;
+  background-color:#242e37;
+}
+
+.button_obj {
+  border: none;
+  display: block;
+  text-align: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  outline: none;
+  overflow: hidden;
+  position: relative;
+  color: white;
+  font-weight: 700;
+  font-size: 5px;
+  background-color: #152238;
+  padding: 15px 30px;
+  margin: 0 auto;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.20);
+}
+.description{
+  text-align: center;
+}
+
+.description {
+  font-size: 15px;
+}
+
+.button_obj span {
+  position: relative;
+  z-index: 1;
+}
+
+.button_obj:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 300%;
+  width: 140%;
+  background: white;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  -webkit-transform: translateX(-98%) translateY(-25%) rotate(45deg);
+  transform: translateX(-98%) translateY(-25%) rotate(45deg);
+}
+
+.button_obj:hover:after {
+  -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
+  transform: translateX(-9%) translateY(-25%) rotate(45deg);
+}
+
+.button {
+  border: none;
+  display: block;
+  text-align: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  outline: none;
+  overflow: hidden;
+  position: relative;
+  color: white;
+  font-weight: 700;
+  font-size: 15px;
+  background-color: #222;
+  padding: 15px 30px;
+  margin: 0 auto;
+  box-shadow: 0 5px 15px rgba(0,0,0,0);
+}

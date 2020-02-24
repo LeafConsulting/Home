@@ -75,7 +75,10 @@ html {
 
     /* Alt over 1200px */
     .display-1 {
-        font-size: 8rem;
+        font-size: 6rem;
+    }
+    .display-2 {
+        font-size: 3.5rem;
     }
 
     .founderImg {

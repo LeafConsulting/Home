@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Complete Bootstrap 4 Website Layout</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+	<div class="wrapper text-center">
+
+		<!-- Navigation bar -->
+		<nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+
+			<!-- Logo here:-->
+			<a class="navbar-brand" href=#>LEAF</a>
+			<button class="navbar-toggler" data-toggle="collapse" data-target="#navbarResponsive">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<!-- Collapser sammen navbar nå liten nok-->
+			<div class="collapse navbar-collapse" id="navbarResponsive">
+				<!-- De ulike "knappene" på navbar -->
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="#AnsatteRef">Ansatte</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#Tjenester">Tjenester</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#Portefølje">Portefølje</a>
+					</li>
+				</ul>
+				<!-- Knapp til mail (kontakt oss)-->
+				<button onclick="window.location.href='mailto:kontakt@leafconsulting.no'" class="btn btn-success navbar-btn btn-md">Kontakt oss</button>
+			</div>
+			</nav>
+	</div>
+
+	<!-- Skifter bildet og skrift etter størrelse på web-->
+	<script type="text/javascript">
+		// 768 som er md
+		var mobileWidth = 768;
+
+		function onLoadFunction() {
+			if (window.innerWidth <= mobileWidth) {
+				//     document.getElementById("homePage-img").src = "Bilder/mobil_bakgrunn2.jpg";
+				//     document.getElementById("headLinePlacement").style = "margin:-80vw 0 0 25vw";
+
+
+
+			} else {
+				document.getElementById("homePage-img").src = "Bilder/home-PC.jpg";
+				document.getElementById("headLinePlacement").style = "margin:-55vw 0 0 0;"
+			}
+		}
+
+		$(window).resize(function() {
+			onLoadFunction();
+		});
+
+		window.onload = function() {
+			onLoadFunction();
+		};
+	</script>
+
+	<!-- Front page aka home page -->
+
+	<div class="text-center">
+		<!-- Øverste bildet -->
+		<img id="homePage-img-up" class="img-fluid mx-auto" src="Bilder/home-PC.jpg">
+
+		<!-- Headline/overskrift = Leac Consulting -->
+		<div id="headLinePlacement" class="w-100 position-absolute" style="margin:-55vw 0 0 0; ">
+			<!-- Forside tekst -->
+			<h1 class="display-1 text-success my-auto">Leaf</h1>
+			<h1 class="display-1 text-body my-auto">Consulting</h1>
+			<!--- Ansatte -->
+
+			<div id="AnsatteRef"></div>
+			<div id="founderContainer" class="container-fluid">
+				<h1 id="ansatte-text" class="display-2">Ansatte</h1>
+				<div id="ansatte-bilder" class="container">
+					<!-- De runde bildene -->
+					<div class="row d-flex justify-content-center">
+						<div class="col-sm-6 col-xl-3 col-lg-3 col-md-3 mx-auto">
+							<img class="mx-auto d-block founderImg" src="https://www.w3schools.com/howto/img_avatar.png" alt="">
+							<p class="founderTitle text-center">Andreas Aarrestad</p>
+						</div>
+						<div class="col-sm-6 col-xl-3 col-lg-3 col-md-3 mx-auto">
+							<img class=" mx-auto d-block founderImg" src="https://www.w3schools.com/howto/img_avatar.png" alt="">
+							<p class="founderTitle text-center">Fridtjof Storm Flaate</p>
+						</div>
+						<div class="col-sm-6 col-xl-3 col-lg-3 col-md-3 mx-auto">
+							<img class="founderImg d-block mx-auto" src="https://www.w3schools.com/howto/img_avatar.png" alt="">
+							<p class="founderTitle text-center">Jannik Fredricsson</p>
+						</div>
+						<div class="col-sm-6 col-xl-3 col-lg-3 col-md-3 mx-auto">
+							<img class="founderImg d-block mx-auto" src="https://www.w3schools.com/howto/img_avatar.png" alt="">
+							<p class="founderTitle text-center">Santhosh Shanmugam</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<img id="homePage-img-down" src="Bilder/NedreBilde.jpg" class="img-fluid mx-auto">
+
+		<div class="andre-del w-100 position-absolute">
+			<!--- Tjenester -->
+			<div id="tjenesterContainer" >
+				<h1 id="Tjenester" class="display-2 text-body text-center">Tjenester</h1>
+
+				<div class="container-fluid">
+					<div class="row d-flex justify-content-center">
+						<div class="col-xs-9 col-sm-8 col-md-4 col-lg-4 col-xl-4">
+							<div class="row d-flex justify-content-center">
+								<div class="col-xs-9 col-sm-8 col-md-8 col-lg-5 col-xl-4 d-flex justify-content-center">
+									<img class="tjenesteikon" src="Bilder\layers.svg" alt="">
+								</div>
+							</div>
+							<br>
+							<h3 class="text-center">Kompetent</h3>
+
+							<p class="text-center">Våre konsulenter er sivilingeniørstudenter ved Gløshaugen i Trondheim, og har god erfaring
+								fra arbeidslivet samt en tung faglig bakgrunn. </p>
+
+						</div>
+						<div class="col-xs-9 col-sm-8 col-md-4 col-lg-4 col-xl-4">
+
+							<div class="row d-flex justify-content-center">
+								<div class="col-xs-9 col-sm-8 col-md-9 col-lg-5 col-xl-4 d-flex justify-content-center">
+									<img class="tjenesteikon" src="Bilder\settings.svg" alt="">
+								</div>
+							</div>
+							<br>
+							<h3 class="text-center"> Skreddersydd</h3>
+							<p class="text-center">Vi er svært fleksible, og kan tilby moderne webdesign, effektive programvareløsninger og strategi tilpasset dine behov. </p>
+						</div>
+						<div class="col-xs-9 col-sm-8 col-md-4 col-lg-4 col-xl-4">
+
+							<div class="row d-flex justify-content-center">
+								<div class="col-xs-9 col-sm-8 col-md-8 col-lg-6 col-xl-4 d-flex justify-content-center">
+									<img class="tjenesteikon" src="Bilder\growth.svg" alt="">
+								</div>
+							</div>
+							<br>
+							<h3 class="text-center">Rimelig</h3>
+							<p class="text-center">Ettersom våre ansatte er fulltidsstudenter, vil utviklingen av produktet bli noe lengre. Til gjengjeld
+								er våre priser langt under markedsverdi.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		<!-- Nederste bildet -->
+	</div>
+	<div class="siste-del w-100 position-absolute">
+	<div id="footer">
+		<br>
+		<div class="button_container d-flex justify-content-center">
+			<button class="button_obj" onclick="window.open('mailto:kontakt@leafconsulting.no?subject=Spørsmål til Leaf');">
+				<a class="description text-center" style="color: grey;">Kontakt Oss</a>
+			</button>
+		</div>
+		<br>
+		<p class="text-center" style="color:white">Her kommer footer
+
+			<br><br> © Leaf Consulting ANS</p>
+	</div>
+</div>
+</div>
+
+
+
+	</div>
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
+
+<!-- Bra buttons-->
+<!--
+<button type="button" class="btn btn-outline-light btn-lg">Se demo</button>
+<button type="button" class="btn btn-primary btn-lg">Lets go</button>
+-->

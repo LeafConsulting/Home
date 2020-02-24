@@ -90,7 +90,7 @@ html {
         margin-top: 17vw;
     }
 
-    @media (min-width: 1800px) {
+    @media (min-width: 1500px) {
         .display-1 {
             font-size: 7rem;
 
@@ -161,28 +161,6 @@ html {
         #founderContainer > .display-2 {
             font-size: 2rem;
         }
-        /*#founderContainer {
-          background-color: white;
-          margin-top: 35vw;
-        }
-        #Tjenester {
-            background-color: white;
-        }
-        .founderTitle {
-            color: black;
-        }
-        #founderContainer > .display-2 {
-            font-size: 2rem;
-            color: black;
-        }
-        #tjenesterContainer {
-          margin-top: -20vw;
-          padding-top: 0vw;
-          background-color: white;
-        }
-        .siste-del {
-            margin-top: 200vw;
-        }*/
 
     }
 
@@ -234,7 +212,7 @@ html {
 
     @media (max-width: 576px) {
         .display-1 {
-            font-size: 2.3rem;
+            font-size: 3rem;
 
         }
         .display-2 {

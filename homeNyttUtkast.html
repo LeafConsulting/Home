@@ -14,7 +14,7 @@
 	<div class="wrapper text-center">
 
 		<!-- Navigation bar -->
-		<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+		<nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
 
 			<!-- Logo here:-->
 			<a class="navbar-brand" href=#>LEAF</a>
@@ -27,7 +27,7 @@
 				<!-- De ulike "knappene" på navbar -->
 				<ul class="navbar-nav ml-auto">
 					<li class="nav-item">
-						<a class="nav-link" href="#Ansatte">Ansatte</a>
+						<a class="nav-link" href="#AnsatteRef">Ansatte</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="#Tjenester">Tjenester</a>
@@ -39,8 +39,8 @@
 				<!-- Knapp til mail (kontakt oss)-->
 				<button onclick="window.location.href='mailto:kontakt@leafconsulting.no'" class="btn btn-success navbar-btn btn-md">Kontakt oss</button>
 			</div>
+			</nav>
 	</div>
-	</nav>
 
 	<!-- Skifter bildet og skrift etter størrelse på web-->
 	<script type="text/javascript">
@@ -80,9 +80,9 @@
 			<!-- Forside tekst -->
 			<h1 class="display-1 text-success my-auto">Leaf</h1>
 			<h1 class="display-1 text-body my-auto">Consulting</h1>
-
 			<!--- Ansatte -->
-
+			
+			<div id="AnsatteRef"></div>
 			<div id="founderContainer" class="container-fluid">
 				<h1 id="ansatte-text" class="display-2">Ansatte</h1>
 				<div id="ansatte-bilder" class="container">

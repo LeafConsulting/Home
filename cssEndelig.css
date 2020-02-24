@@ -285,7 +285,7 @@ html {
             color: black;
         }
         #tjenesterContainer {
-          margin-top: -40vw;
+          margin-top: -30vw;
           padding-top: 0vw;
           background-color: white;
         }
@@ -293,6 +293,96 @@ html {
 
         .siste-del {
             margin-top: 500vw;
+        }
+
+    }
+
+    @media (max-width: 415px) {
+        .display-1 {
+            font-size: 3rem;
+
+        }
+        .display-2 {
+            font-size: 1rem;
+        }
+        .founderImg {
+
+            border-radius: 50%;
+        }
+
+        .founderImg {
+            height:25vw;
+            width:25vw;
+            border-radius: 50%;
+        }
+        #founderContainer {
+          padding-top: 30px;
+          background-color: white;
+        }
+
+        #Tjenester {
+            background-color: white;
+        }
+        .founderTitle {
+            color: black;
+        }
+        #founderContainer > .display-2 {
+            font-size: 2rem;
+            color: black;
+        }
+        #tjenesterContainer {
+          margin-top: -30vw;
+          padding-top: 0vw;
+          background-color: white;
+        }
+
+
+        .siste-del {
+            margin-top: 250vw;
+        }
+
+    }
+    @media (max-width: 360px) {
+        .display-1 {
+            font-size: 2.3rem;
+
+        }
+        .display-2 {
+            font-size: 1rem;
+        }
+        .founderImg {
+
+            border-radius: 50%;
+        }
+
+        .founderImg {
+            height:25vw;
+            width:25vw;
+            border-radius: 50%;
+        }
+        #founderContainer {
+          padding-top: 30px;
+          background-color: white;
+        }
+
+        #Tjenester {
+            background-color: white;
+        }
+        .founderTitle {
+            color: black;
+        }
+        #founderContainer > .display-2 {
+            font-size: 2rem;
+            color: black;
+        }
+        #tjenesterContainer {
+          margin-top: -30vw;
+          padding-top: 0vw;
+          background-color: white;
+        }
+
+        .siste-del {
+            margin-top: 250vw;
         }
 
     }
@@ -331,13 +421,13 @@ html {
             color: black;
         }
         #tjenesterContainer {
-          margin-top: -25vw;
+          margin-top: -20vw;
           padding-top: 0vw;
           background-color: white;
         }
 
         .siste-del {
-            margin-top: 460vw;
+            margin-top: 450vw;
         }
 
     }

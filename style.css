@@ -274,6 +274,51 @@ html {
 
     }
 
+    @media (max-width: 350px) {
+        .display-1 {
+            font-size: 2.3rem;
+
+        }
+        .display-2 {
+            font-size: 2rem;
+        }
+        .founderImg {
+
+            border-radius: 50%;
+        }
+
+        .founderImg {
+            height:25vw;
+            width:25vw;
+            border-radius: 50%;
+        }
+        #founderContainer {
+          padding-top: 30px;
+          background-color: white;
+        }
+
+        #Tjenester {
+            background-color: white;
+        }
+        .founderTitle {
+            color: black;
+        }
+        #founderContainer > .display-2 {
+            font-size: 2rem;
+            color: black;
+        }
+        #tjenesterContainer {
+          margin-top: -8vw;
+          padding-top: 0vw;
+          background-color: white;
+        }
+
+        .siste-del {
+            margin-top: 300vw;
+        }
+
+    }
+
 /* FOOTER */
 
     /* CSS til kontakt button i footer*/

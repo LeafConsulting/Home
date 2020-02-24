@@ -45,18 +45,24 @@
 	<!-- Skifter bildet og skrift etter størrelse på web-->
 	<script type="text/javascript">
 		// 768 som er md
-		var mobileWidth = 768;
+		var mobileWidth = 576;
+
 
 		function onLoadFunction() {
 			if (window.innerWidth <= mobileWidth) {
-				//     document.getElementById("homePage-img").src = "Bilder/mobil_bakgrunn2.jpg";
-				//     document.getElementById("headLinePlacement").style = "margin:-80vw 0 0 25vw";
+				document.getElementById("homePage-img-up").src = "Bilder/home-PC-0.33.jpg";
+				document.getElementById("AnsatteRef").style = "margin: 100vw 0 0 0";
+				document.getElementById("headLinePlacement").style = "margin: -138vw 0 0 0";
 
 
 
 			} else {
-				document.getElementById("homePage-img").src = "Bilder/home-PC.jpg";
+				document.getElementById("homePage-img-up").src = "Bilder/home-PC.jpg";
+
+				// Fikse opp i det som ble forandret med mobil versjon
+				document.getElementById("AnsatteRef").style = "margin: 0 0 0 0";
 				document.getElementById("headLinePlacement").style = "margin:-55vw 0 0 0;"
+
 			}
 		}
 
@@ -67,6 +73,10 @@
 		window.onload = function() {
 			onLoadFunction();
 		};
+
+		$('.navbar-nav>li>a').on('click', function(){
+    		$('.navbar-collapse').collapse('hide');
+		});
 	</script>
 
 	<!-- Front page aka home page -->
@@ -77,6 +87,8 @@
 
 		<!-- Headline/overskrift = Leac Consulting -->
 		<div id="headLinePlacement" class="w-100 position-absolute" style="margin:-55vw 0 0 0; ">
+
+
 			<!-- Forside tekst -->
 			<h1 class="display-1 text-success my-auto">Leaf</h1>
 			<h1 class="display-1 text-body my-auto">Consulting</h1>
@@ -168,8 +180,9 @@
 		<div class="button_container d-flex justify-content-center">
 
 			<button type="button" onclick="window.location.href='mailto:kontakt@leafconsulting.no'" class="btn btn-outline-light btn-lg">Kontakt oss</button>
+
 		</div>
-		<br><br><br><p class="text-center" style="color:white">© Leaf Consulting ANS</p>
+		<br>	<p class="text-center" style="color:white"> Eller send oss en epost på: kontakt@leafconsulting.no<br><br>© Leaf Consulting ANS</p>
 	</div>
 </div>
 </div>

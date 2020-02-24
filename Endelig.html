@@ -59,7 +59,6 @@
 			} else {
 				document.getElementById("homePage-img-up").src = "Bilder/home-PC.jpg";
 
-
 				// Fikse opp i det som ble forandret med mobil versjon
 				document.getElementById("AnsatteRef").style = "margin: 0 0 0 0";
 				document.getElementById("headLinePlacement").style = "margin:-55vw 0 0 0;"
@@ -74,6 +73,10 @@
 		window.onload = function() {
 			onLoadFunction();
 		};
+
+		$('.navbar-nav>li>a').on('click', function(){
+    		$('.navbar-collapse').collapse('hide');
+		});
 	</script>
 
 	<!-- Front page aka home page -->

@@ -3,11 +3,13 @@
   padding: 0;
 }
 
+/*Tjenester*/
 .andre-del {
   background-color: rgb(248, 248, 246);
 
 }
 
+/*Tittel og Ansatte*/
 .første-del {
   background-image: url(../css/mobil1.jpg);
   background-repeat: no-repeat;
@@ -21,35 +23,37 @@
   padding-left: 40vw;
 
 }
+/*Tittel tekst*/
 .display-1 {
   font-size: 6rem;
     color: black;
 }
 
+/*Hele greia*/
 .wrapper {
   width: 100%;
   position: absolute;
 }
 
-.bilde1 {
-  width: 100%;
 
-}
 .tjenesteikon {
     height:15vw;
     width:15vw;
 }
 
+/*Ansatte og Tjenester tittel*/
 .display-2 {
     font-size: 4rem;
     color: black;
 }
 
+/*Navn og tjenestetekst*/
 .display-3 {
     font-size: 1rem;
     color: black;
 }
 
+/*Bilder av oss*/
 .founderImg {
     height:15vw;
     width:15vw;
@@ -87,7 +91,7 @@
 }
 
 
-
+/*Endrer tekst når en viss størrelse*/
 @media only screen and (max-width: 1350px) {
   .display-1 {
       font-size: 6rem;
@@ -111,6 +115,8 @@ html {
   scroll-behavior: smooth;
 }
 
+
+/*Knapp shit start*/
 .button_container {
   position: max-auto;
   left: 0;
@@ -185,3 +191,5 @@ html {
   margin: 0 auto;
   box-shadow: 0 5px 15px rgba(0,0,0,0);
 }
+
+/*Knapp shit slutt*/

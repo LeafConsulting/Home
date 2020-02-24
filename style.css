@@ -34,11 +34,11 @@ html {
 /* Posisjonering av containers */
     #Tjenester {
         padding-bottom:3vw;
-        padding-top: 1vw;
+        padding-top: 3vw;
     }
     #tjenesterContainer {
-      padding-bottom: 7vw;
-      padding-top: 7vw;
+      margin-top: -150vw;
+      padding-top: 0vw;
     }
 
     #footer {
@@ -97,7 +97,6 @@ html {
             height:12vw;
             width:12vw;
 
-
         }
 
         #founderContainer {
@@ -140,8 +139,11 @@ html {
       }
     @media (max-width: 768px) {
         .display-1 {
-            font-size: 4rem;
+            font-size: 3rem;
 
+        }
+        .display-2 {
+            font-size: 2rem;
         }
         .founderImg {
 
@@ -153,18 +155,87 @@ html {
             width:15vw;
             border-radius: 50%;
         }
+        #founderContainer > .display-2 {
+            font-size: 2rem;
+        }
+        /*#founderContainer {
+          background-color: white;
+          margin-top: 35vw;
+        }
+        #Tjenester {
+            background-color: white;
+        }
+        .founderTitle {
+            color: black;
+        }
+        #founderContainer > .display-2 {
+            font-size: 2rem;
+            color: black;
+        }
+        #tjenesterContainer {
+          margin-top: -20vw;
+          padding-top: 0vw;
+          background-color: white;
+        }
+        .siste-del {
+            margin-top: 200vw;
+        }*/
+
+    }
+
+    @media (max-width: 760px) {
+        .display-1 {
+            font-size: 3rem;
+
+        }
+        .display-2 {
+            font-size: 2rem;
+        }
+        .founderImg {
+
+            border-radius: 50%;
+        }
+
+        .founderImg {
+            height:15vw;
+            width:15vw;
+            border-radius: 50%;
+        }
+        #founderContainer > .display-2 {
+            font-size: 2rem;
+        }
         #founderContainer {
           background-color: white;
           margin-top: 35vw;
         }
-
+        #Tjenester {
+            background-color: white;
+        }
+        .founderTitle {
+            color: black;
+        }
+        #founderContainer > .display-2 {
+            font-size: 2rem;
+            color: black;
+        }
+        #tjenesterContainer {
+          margin-top: -60vw;
+          padding-top: 0vw;
+          background-color: white;
+        }
+        .siste-del {
+            margin-top: 200vw;
+        }
 
     }
 
     @media (max-width: 576px) {
         .display-1 {
-            font-size: 3rem;
+            font-size: 2.3rem;
 
+        }
+        .display-2 {
+            font-size: 2rem;
         }
         .founderImg {
 
@@ -179,6 +250,26 @@ html {
         #founderContainer {
           padding-top: 30px;
           background-color: white;
+        }
+
+        #Tjenester {
+            background-color: white;
+        }
+        .founderTitle {
+            color: black;
+        }
+        #founderContainer > .display-2 {
+            font-size: 2rem;
+            color: black;
+        }
+        #tjenesterContainer {
+          margin-top: -30vw;
+          padding-top: 0vw;
+          background-color: white;
+        }
+
+        .siste-del {
+            margin-top: 200vw;
         }
 
     }

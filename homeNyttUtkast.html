@@ -51,7 +51,9 @@
 	        function onLoadFunction() {
 	            if (window.innerWidth <= mobileWidth) {
 	           //     document.getElementById("homePage-img").src = "Bilder/mobil_bakgrunn2.jpg";
-	           //     document.getElementById("headLinePlacement").style = "margin:-80vw 0 0 25vw"
+	           //     document.getElementById("headLinePlacement").style = "margin:-80vw 0 0 25vw";
+
+
 
 	            } else {
 	                document.getElementById("homePage-img").src = "Bilder/home-PC.jpg";
@@ -72,42 +74,53 @@
 	    <!-- Front page aka home page -->
 
 		  <div class="text-center">
-		        <img id="homePage-img" class="img-fluid mx-auto" src="Bilder/home-PC.jpg" >
+			  <!-- Øverste bildet -->
+		        <img id="homePage-img-up" class="img-fluid mx-auto" src="Bilder/home-PC.jpg" >
 
 		    <!-- Headline/overskrift = Leac Consulting -->
 		        <div id="headLinePlacement" class="w-100 position-absolute" style="margin:-55vw 0 0 0; ">
 					<!-- Forside tekst -->
 					<h1 class="display-1 text-success my-auto">Leaf</h1>
 		            <h1 class="display-1 text-body my-auto">Consulting</h1>
+
+					<!--- Ansatte -->
+
+					   <div id="founderContainer" class="container-fluid">
+	   			       <h1 id="ansatte-text" class="display-2">Ansatte</h1>
+	   			       <div id="ansatte-bilder" class="container">
+	   						<!-- De runde bildene -->
+	   			            <div class="row d-flex justify-content-center">
+	   			                <div class="col-sm-6 col-xl-3 col-lg-3 col-md-3 mx-auto">
+	   			                    <img class="mx-auto d-block founderImg" src="https://www.w3schools.com/howto/img_avatar.png" alt="">
+	   			                    <p class="founderTitle text-center">Andreas Aarrestad</p>
+	   			                </div>
+	   			                <div class="col-sm-6 col-xl-3 col-lg-3 col-md-3 mx-auto">
+	   			                    <img class=" mx-auto d-block founderImg" src="https://www.w3schools.com/howto/img_avatar.png" alt="">
+	   			                    <p class="founderTitle text-center">Fridtjof Storm Flaate</p>
+	   			                </div>
+	   			                <div class="col-sm-6 col-xl-3 col-lg-3 col-md-3 mx-auto">
+	   			                    <img class="founderImg d-block mx-auto" src="https://www.w3schools.com/howto/img_avatar.png" alt="">
+	   			                    <p class="founderTitle text-center">Jannik Fredricsson</p>
+	   			                </div>
+	   			                <div class="col-sm-6 col-xl-3 col-lg-3 col-md-3 mx-auto">
+	   			                    <img class="founderImg d-block mx-auto" src="https://www.w3schools.com/howto/img_avatar.png" alt="">
+	   			                    <p class="founderTitle text-center">Santhosh Shanmugam</p>
+	   			                </div>
+	   			            </div>
+	   			        </div>
+	   			    </div>
 		        </div>
+ 			<!-- Nederste bildet -->
+				<img id="homePage-img-down" src="Bilder/NedreBilde.jpg" class="img-fluid mx-auto">
+
+
+
+
+
   		</div>
 
 
-		    <!--- Ansatte -->
-		    <div id="founderContainer" class="container-fluid">
-		        <h1 id="Ansatte" class="display-2 d-flex justify-content-center">Ansatte</h1>
-		        <div class="container ">
-					<!-- De runde bildene -->
-		            <div class="row d-flex justify-content-center">
-		                <div class="col-sm-6 col-xl-3 col-lg-3 mx-auto">
-		                    <img class="mx-auto d-block founderImg" src="https://www.w3schools.com/howto/img_avatar.png" alt="">
-		                    <p class="founderTitle text-center">Andreas Aarrestad</p>
-		                </div>
-		                <div class="col-sm-6 col-xl-3 col-lg-3 mx-auto">
-		                    <img class=" mx-auto d-block founderImg" src="https://www.w3schools.com/howto/img_avatar.png" alt="">
-		                    <p class="founderTitle text-center">Fridtjof Storm Flaate</p>
-		                </div>
-		                <div class="col-sm-6 col-xl-3 col-lg-3 mx-auto">
-		                    <img class="founderImg d-block mx-auto" src="https://www.w3schools.com/howto/img_avatar.png" alt="">
-		                    <p class="founderTitle text-center">Jannik Fredricsson</p>
-		                </div>
-		                <div class="col-sm-6 col-xl-3 col-lg-3 mx-auto">
-		                    <img class="founderImg d-block mx-auto" src="https://www.w3schools.com/howto/img_avatar.png" alt="">
-		                    <p class="founderTitle text-center">Santhosh Shanmugam</p>
-		                </div>
-		            </div>
-		        </div>
-		    </div>
+
 
 
 		    <!--- Tjenester -->

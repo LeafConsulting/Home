@@ -1,321 +1,193 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-
+<html lang="en">
+<!--bruh-->
 <head>
-    <meta charset="utf-8">
-    <title>Leaf Consulting</title>
-
-    <!-- Online bootstrap 4.4
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        -->
-    <!--sjekk-->
-    <!-- START Offline bootstrap 4.4.1 -->
-    <link href="bootstrap-4.4.1-dist/css/bootstrap.css" rel="stylesheet" />
-    <link href="bootstrap-4.4.1-dist/css/bootstrap-theme.css" rel="stylesheet" />
-    <link rel="stylesheet" href="css/custom.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
-    <script src="bootstrap-4.4.1-dist/js/bootstrap.min.js"></script>
-
-    <!-- END Offline bootstrap 4.4.1 -->
-
-    <script>
-        //Smooth scroll
-        $(function() {
-            $(document).scroll(function() {
-                var $nav = $(".navbar-fixed-top");
-                $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
-            });
-<<<<<<< HEAD
-
-        </script>
-    </head>
-    <body>
-
-
-
-
-        <!-- Hello world fra andreas! -->
-        <div class="container-fluid">
-            <section class="row no-gutter align-items-center">
-
-                <!-- START Navbar -->
-                <div class="col-lg-12 text-center p-0 d-flex align-items-center">
-                    <img class="img-fluid position-relative mx-auto" src="Bilder/home-PC.jpg" alt="">
-                    <div class="w-100 h-100 position-absolute">
-
-                        <nav class="navbar navbar-expand-lg navbar-light navbar-fixed-top">
-
-
-                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
-                            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                                <a  class="navbar-brand" href="#">
-                                    <!--<img src="Bilder\leaf_icon.png" id="logoImg">-->
-                                    Leaf
-                                </a>
-                                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#Ansatte">Ansatte</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#Tjenester">Tjenester</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#Prosjekter">Prosjekter</a>
-                                    </li>
-                                </ul>
-
-                                <button onclick="window.location.href='mailto:kontakt@leafconsulting.no'" class="btn btn-success navbar-btn">Kontakt oss</button>
-                            </div>
-                        </nav>
-=======
-        });
-    </script>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Complete Bootstrap 4 Website Layout</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<link href="style.css" rel="stylesheet">
 </head>
 
 <body>
+	<div class="wrapper text-center">
 
+		<!-- Navigation bar -->
+		<nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
 
-    <div class="container-fluid">
-        <section class="row no-gutter align-items-center">
+			<!-- Logo here:-->
+			<a class="navbar-brand" href=#>LEAF</a>
+			<button class="navbar-toggler" data-toggle="collapse" data-target="#navbarResponsive">
+				<span class="navbar-toggler-icon"></span>
+			</button>
 
-            <!-- START Navbar -->
-            <div class="col-lg-12 text-center p-0 d-flex align-items-center">
-                <img class="img-fluid position-relative mx-auto" src="Bilder/home-PC.jpg" alt="">
-                <div class="w-100 h-100 position-absolute">
+			<!-- Collapser sammen navbar nå liten nok-->
+			<div class="collapse navbar-collapse" id="navbarResponsive">
+				<!-- De ulike "knappene" på navbar -->
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="#AnsatteRef">Ansatte</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#Tjenester">Tjenester</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#Portefølje">Portefølje</a>
+					</li>
+				</ul>
+				<!-- Knapp til mail (kontakt oss)-->
+				<button onclick="window.location.href='mailto:kontakt@leafconsulting.no'" class="btn btn-success navbar-btn btn-md">Kontakt oss</button>
+			</div>
+			</nav>
+	</div>
 
-                    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+	<!-- Skifter bildet og skrift etter størrelse på web-->
+	<script type="text/javascript">
+		// 768 som er md
+		var mobileWidth = 768;
 
-
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                            <a class="navbar-brand" href="#">
-                                <!--<img src="Bilder\leaf_icon.png" id="logoImg">-->
-                                Leaf
-                            </a>
-                            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#Ansatte">Ansatte</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#Tjenester">Tjenester</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#Prosjekter">Prosjekter</a>
-                                </li>
-                            </ul>
-
-                            <button onclick="window.location.href='mailto:kontakt@leafconsulting.no'" class="btn btn-success navbar-btn">Kontakt oss</button>
-                        </div>
-                    </nav>
->>>>>>> 932edc13846d2d1fdfc7f919e9de481209ccb3c6
-
-                </div>
-                <!-- END Navbar -->
-
-<<<<<<< HEAD
-                    <!-- Definerer plasseringen av teksten -->
-                    <div class="w-100 position-absolute" style="margin-top:-15vw;">
-                        <h1 class="display-1 text-success my-auto">Leaf</h1>
-                        <h1 class="display-1 text-body my-auto">Consulting</h1>
-                    </div>
-                    <!-- Comment done -->
-                    <div id="founderHeader" class=" w-100  position-absolute">
-                        <h1 id="Ansatte" class="display-2 text-light">Ansatte</h1>
-
-                    </div>
-=======
-                <!-- Definerer plasseringen av teksten -->
-                <div class="w-100 position-absolute" style="margin-top:-15vw;">
-                    <h1 class="display-1 text-success my-auto">Leaf</h1>
-                    <h1 class="display-1 text-body my-auto">Consulting</h1>
-                </div>
-                <!-- Comment done -->
-                <div id="founderHeader" class=" w-100  position-absolute">
-                    <h1 id="Ansatte" class="display-2 text-light ">Ansatte</h1>
->>>>>>> 932edc13846d2d1fdfc7f919e9de481209ccb3c6
-                </div>
-            </div>
-
-
-        </section>
-    </div>
-    <div class="container-fluid">
-
-        <section class="row no-gutter align-items-center">
-
-
-            <div class="col-lg-12 text-center p-0 d-flex align-items-center">
-                <img class="img-fluid position-relative mx-auto" src="Bilder\home-PC-oppned.jpg" alt="">
-
-                <div id="founderContainer" class="w-100  h-75 position-absolute">
-
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-sm-3">
-                                <img class=" founderImg" src="https://www.w3schools.com/howto/img_avatar.png" alt="">
-                                <p class="founderTitle display-3">Andreas Aarrestad</p>
-                            </div>
-                            <div class="col-sm-3">
-                                <img class="founderImg" src="https://www.w3schools.com/howto/img_avatar.png" alt="">
-                                <p class="founderTitle display-3">Fridtjof Flaate</p>
-                            </div>
-                            <div class="col-sm-3">
-                                <img class="founderImg" src="https://www.w3schools.com/howto/img_avatar.png" alt="">
-                                <p class="founderTitle display-3">Jannik Fredricsson</p>
-                            </div>
-                            <div class="col-sm-3">
-                                <img class="founderImg" src="https://www.w3schools.com/howto/img_avatar.png" alt="">
-                                <p class="founderTitle display-3">Santhosh Shanmugam</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div id="tjenesterContainer" class="w-100 position-absolute">
-                    <h1 id="Tjenester" class="display-2 text-success my-auto">Tjenester</h1>
-
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-sm-4">
-
-                                <div class="row">
-                                    <div class="col-lg-12 align-items-center">
-                                        <img class="tjenesteikon" src="Bilder\layers.svg" alt="">
-                                    </div>
-                                </div>
-                                <br>
-                                <h3>Kompetent</h3>
-
-                                <p>Våre konsulenter er sivilingeniørstudenter ved Gløshaugen i Trondheim, og har god erfaring
-                                    fra arbeidslivet samt en tung faglig bakgrunn. </p>
-
-                            </div>
-                            <div class="col-sm-4">
-
-                                <div class="row">
-                                    <div class="col-lg-12 align-items-center">
-                                        <img class="tjenesteikon" src="Bilder\settings.svg" alt="">
-                                    </div>
-                                </div>
-                                <br>
-                                <h3>Skreddersydd</h3>
-                                <p>Vi er svært fleksible, og kan tilby moderne webdesign, effektive programvareløsninger og strategi tilpasset dine behov. </p>
-                            </div>
-                            <div class="col-sm-4">
-
-                                <div class="row">
-                                    <div class="col-lg-12 align-items-center">
-                                        <img class="tjenesteikon" src="Bilder\growth.svg" alt="">
-                                    </div>
-                                </div>
-                                <br>
-                                <h3>Rimelig</h3>
-                                Ettersom våre ansatte er fulltidsstudenter, vil utviklingen av produktet bli noe lengre. Til gjengjeld
-                                er våre priser langt under markedsverdi.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-<<<<<<< HEAD
+		function onLoadFunction() {
+			if (window.innerWidth <= mobileWidth) {
+				//     document.getElementById("homePage-img").src = "Bilder/mobil_bakgrunn2.jpg";
+				//     document.getElementById("headLinePlacement").style = "margin:-80vw 0 0 25vw";
 
 
 
+			} else {
+				document.getElementById("homePage-img").src = "Bilder/home-PC.jpg";
+				document.getElementById("headLinePlacement").style = "margin:-55vw 0 0 0;"
+			}
+		}
+
+		$(window).resize(function() {
+			onLoadFunction();
+		});
+
+		window.onload = function() {
+			onLoadFunction();
+		};
+	</script>
+
+	<!-- Front page aka home page -->
+
+	<div class="text-center">
+		<!-- Øverste bildet -->
+		<img id="homePage-img-up" class="img-fluid mx-auto" src="Bilder/home-PC.jpg">
+
+		<!-- Headline/overskrift = Leac Consulting -->
+		<div id="headLinePlacement" class="w-100 position-absolute" style="margin:-55vw 0 0 0; ">
+			<!-- Forside tekst -->
+			<h1 class="display-1 text-success my-auto">Leaf</h1>
+			<h1 class="display-1 text-body my-auto">Consulting</h1>
+			<!--- Ansatte -->
+
+			<div id="AnsatteRef"></div>
+			<div id="founderContainer" class="container-fluid">
+				<h1 id="ansatte-text" class="display-2">Ansatte</h1>
+				<div id="ansatte-bilder" class="container">
+					<!-- De runde bildene -->
+					<div class="row d-flex justify-content-center">
+						<div class="col-sm-6 col-xl-3 col-lg-3 col-md-3 mx-auto">
+							<img class="mx-auto d-block founderImg" src="https://www.w3schools.com/howto/img_avatar.png" alt="">
+							<p class="founderTitle text-center">Andreas Aarrestad</p>
+						</div>
+						<div class="col-sm-6 col-xl-3 col-lg-3 col-md-3 mx-auto">
+							<img class=" mx-auto d-block founderImg" src="https://www.w3schools.com/howto/img_avatar.png" alt="">
+							<p class="founderTitle text-center">Fridtjof Storm Flaate</p>
+						</div>
+						<div class="col-sm-6 col-xl-3 col-lg-3 col-md-3 mx-auto">
+							<img class="founderImg d-block mx-auto" src="https://www.w3schools.com/howto/img_avatar.png" alt="">
+							<p class="founderTitle text-center">Jannik Fredricsson</p>
+						</div>
+						<div class="col-sm-6 col-xl-3 col-lg-3 col-md-3 mx-auto">
+							<img class="founderImg d-block mx-auto" src="https://www.w3schools.com/howto/img_avatar.png" alt="">
+							<p class="founderTitle text-center">Santhosh Shanmugam</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<img id="homePage-img-down" src="Bilder/NedreBilde.jpg" class="img-fluid mx-auto">
+
+		<div class="andre-del w-100 position-absolute">
+			<!--- Tjenester -->
+			<div id="tjenesterContainer" >
+				<h1 id="Tjenester" class="display-2 text-body text-center">Tjenester</h1>
+
+				<div class="container-fluid">
+					<div class="row d-flex justify-content-center">
+						<div class="col-xs-9 col-sm-8 col-md-4 col-lg-4 col-xl-4">
+							<div class="row d-flex justify-content-center">
+								<div class="col-xs-9 col-sm-8 col-md-8 col-lg-5 col-xl-4 d-flex justify-content-center">
+									<img class="tjenesteikon" src="Bilder\layers.svg" alt="">
+								</div>
+							</div>
+							<br>
+							<h3 class="text-center">Kompetent</h3>
+
+							<p class="text-center">Våre konsulenter er sivilingeniørstudenter ved Gløshaugen i Trondheim, og har god erfaring
+								fra arbeidslivet samt en tung faglig bakgrunn. </p>
+
+						</div>
+						<div class="col-xs-9 col-sm-8 col-md-4 col-lg-4 col-xl-4">
+
+							<div class="row d-flex justify-content-center">
+								<div class="col-xs-9 col-sm-8 col-md-9 col-lg-5 col-xl-4 d-flex justify-content-center">
+									<img class="tjenesteikon" src="Bilder\settings.svg" alt="">
+								</div>
+							</div>
+							<br>
+							<h3 class="text-center"> Skreddersydd</h3>
+							<p class="text-center">Vi er svært fleksible, og kan tilby moderne webdesign, effektive programvareløsninger og strategi tilpasset dine behov. </p>
+						</div>
+						<div class="col-xs-9 col-sm-8 col-md-4 col-lg-4 col-xl-4">
+
+							<div class="row d-flex justify-content-center">
+								<div class="col-xs-9 col-sm-8 col-md-8 col-lg-6 col-xl-4 d-flex justify-content-center">
+									<img class="tjenesteikon" src="Bilder\growth.svg" alt="">
+								</div>
+							</div>
+							<br>
+							<h3 class="text-center">Rimelig</h3>
+							<p class="text-center">Ettersom våre ansatte er fulltidsstudenter, vil utviklingen av produktet bli noe lengre. Til gjengjeld
+								er våre priser langt under markedsverdi.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		<!-- Nederste bildet -->
+	</div>
+	<div class="siste-del w-100 position-absolute">
+	<div id="footer">
+		<br>
+		<div class="button_container d-flex justify-content-center">
+			<button class="button_obj" onclick="window.open('mailto:kontakt@leafconsulting.no?subject=Spørsmål til Leaf');">
+				<a class="description text-center" style="color: grey;">Kontakt Oss</a>
+			</button>
+		</div>
+		<br>
+		<p class="text-center" style="color:white">Her kommer footer
+
+			<br><br> © Leaf Consulting ANS</p>
+	</div>
+</div>
+</div>
 
 
 
-                        <!-- Definerer plasseringen av teksen -->
-
-                        <!-- Comment done -->
-                </div>
-            </section>
-        </div>
-
-        <div class="img-fluid position-relative mx-auto" id="xd"></div>
-
-        <div class="container-fluid">
-=======
-            </div>
-
-            <div class="col-lg-12 text-center p-0 d-flex align-items-center">
-
-                <img class="img-fluid  mx-auto" src="Bilder\background.jpg" alt="">
-            </div>
->>>>>>> 932edc13846d2d1fdfc7f919e9de481209ccb3c6
-
-        <section class="row no-gutter align-items-center">
-            <div class="col-lg-12 text-center p-0 d-flex align-items-center">
-
-                <div id="tjenesterContainer" class="w-100 position-absolute">
-                    <h1 id="Tjenester" class="display-2 text-success my-auto">Tjenester</h1>
-
-<<<<<<< HEAD
-                    <div class="container">
-                        <div class="row">
-                              <div class="col-sm-4">
-
-                                    <div class="row">
-                                        <div class="col-lg-12 align-items-center">
-                                            <img class="tjenesteikon" src="Bilder\layers.svg" alt="">
-                                        </div>
-                                    </div>
-                                    <br>
-                                    <h3>Kompetent</h3>
-
-                                    <p>Våre konsulenter er sivilingeniørstudenter ved Gløshaugen i Trondheim, og har god erfaring
-                                    fra arbeidslivet samt en tung faglig bakgrunn. </p>
-
-                              </div>
-                              <div class="col-sm-4">
-
-                                    <div class="row">
-                                        <div class="col-lg-12 align-items-center">
-                                            <img class="tjenesteikon" src="Bilder\settings.svg" alt="">
-                                        </div>
-                                    </div>
-                                    <br>
-                                    <h3>Skreddersydd</h3>
-                                    <p>Vi er svært fleksible, og kan tilby moderne webdesign, effektive programvareløsninger og strategi tilpasset dine behov.  </p>
-                              </div>
-                              <div class="col-sm-4">
-
-                                    <div class="row">
-                                        <div class="col-lg-12 align-items-center">
-                                            <img class="tjenesteikon" src="Bilder\growth.svg" alt="">
-                                        </div>
-                                    </div>
-                                    <br>
-                                    <h3>Rimelig</h3>
-                                    Ettersom våre ansatte er fulltidsstudenter, vil utviklingen av produktet bli noe lengre. Til gjengjeld
-                                    er våre priser langt under markedsverdi.
-                              </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </div>
-=======
-            <!-- Definerer plasseringen av teksen -->
-
-            <!-- Comment done -->
-    </div>
-    </section>
-    </div>
-
->>>>>>> 932edc13846d2d1fdfc7f919e9de481209ccb3c6
+	</div>
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
 
 </body>
 
-<<<<<<< HEAD
-
-    </body>
-=======
->>>>>>> 932edc13846d2d1fdfc7f919e9de481209ccb3c6
 </html>
+
+<!-- Bra buttons-->
+<!--
+<button type="button" class="btn btn-outline-light btn-lg">Se demo</button>
+<button type="button" class="btn btn-primary btn-lg">Lets go</button>
+-->

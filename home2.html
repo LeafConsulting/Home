@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Leaf Consulting</title>
+
+        <link href="bootstrap-4.4.1-dist/css/bootstrap.css" rel="stylesheet" />
+        <link href="bootstrap-4.4.1-dist/css/bootstrap-theme.css" rel="stylesheet" />
+        <link rel="stylesheet" href="css/custom.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="bootstrap-4.4.1-dist/js/bootstrap.min.js"></script>
+
+        <script>
+            //Smooth scroll
+            $(function () {
+                $(document).scroll(function () {
+                var $nav = $(".navbar-fixed-top");
+                $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+                });
+            });
+
+
+
+            //Bytter navbar-struktur
+
+            var mobileWidth = 1200;
+
+            $(window).resize(function() {
+                if (window.innerWidth <= mobileWidth) {
+                    $("#nav").removeClass("navbar-default");
+                    $("#nav").addClass("sticky-top");
+                    $("#nav").css({"background-color":"white"});
+                } else {
+                    $("#nav").removeClass("sticky-top");
+                    $("#nav").addClass("navbar-default");
+                    $("#nav").css({"background-color":"transparent"});
+                }
+            });
+
+
+
+            $(document).ready(function(){
+                $(window).resize();
+
+                $(window).scroll(function(){
+                    if($(window).scrollTop() > $(window).height()){
+                        $(".sticky-top").css({"background-color":"transparent"});
+                    }
+                    else{
+                        $(".sticky-top").css({"background-color":"white"});
+                    }
+                })
+            })
+        </script>
+    </head>
+    <body>
+
+        <div class="container-fluid">
+            <section class="row no-gutter align-items-center">
+                <div class="col-lg-12 text-center p-0 align-items-center">
+                    <div id="container1">
+
+                        <!--NAVBAR-->
+                        <div id="navbarcontainer">
+                            <nav id="nav" class="navbar navbar-expand-lg navbar-light">
+                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                                    <a  class="navbar-brand" href="#">
+                                        Leaf
+                                    </a>
+                                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#Ansatte">Ansatte</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#Tjenester">Tjenester</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#Prosjekter">Prosjekter</a>
+                                        </li>
+                                    </ul>
+                                    <button onclick="window.location.href='mailto:kontakt@leafconsulting.no'" class="btn btn-success navbar-btn">Kontakt oss</button>
+                                </div>
+                            </nav>
+                        </div>
+
+
+                        <!--REST AV BODY-->
+                        <div id="bodycontainer">
+
+                            <!--Første bilde-->
+                            <img class="img-fluid mx-auto" src="Bilder/home-PC.jpg" >
+
+                            <!--Headline-->
+                            <div class="w-100 position-absolute" style="margin-top:-55vw;">
+                                <h1 class="display-1 text-success my-auto">Leaf</h1>
+                                <h1 class="display-1 text-body my-auto">Consulting</h1>
+                            </div>
+
+                            <!--Oppned bilde-->
+                            <img class="img-fluid mx-auto"  src="Bilder/home-PC-oppned.jpg">
+
+                            <div style="height:1200px;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </body>
+</html>

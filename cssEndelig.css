@@ -387,6 +387,45 @@ html {
         }
 
     }
+    @media (max-width: 375px) {
+        .display-1 {
+            font-size: 2.3rem;
+
+        }
+        .display-2 {
+            font-size: 1rem;
+        }
+        .founderImg {
+
+            border-radius: 50%;
+        }
+
+        .founderImg {
+            height:25vw;
+            width:25vw;
+            border-radius: 50%;
+        }
+        #founderContainer {
+          padding-top: 30px;
+          background-color: white;
+        }
+
+        #Tjenester {
+            background-color: white;
+        }
+        .founderTitle {
+            color: black;
+        }
+        #founderContainer > .display-2 {
+            font-size: 2rem;
+            color: black;
+        }
+        #tjenesterContainer {
+          margin-top: -35vw;
+          padding-top: 0vw;
+          background-color: white;
+        }
+
     @media (max-width: 360px) {
         .display-1 {
             font-size: 2.3rem;
@@ -431,7 +470,7 @@ html {
         }
 
     }
-    @media (max-width: 375px) {
+    @media (max-width: 370px) {
         .display-1 {
             font-size: 2.3rem;
 
@@ -465,7 +504,7 @@ html {
             color: black;
         }
         #tjenesterContainer {
-          margin-top: -35vw;
+          margin-top: -30vw;
           padding-top: 0vw;
           background-color: white;
         }
